@@ -16,7 +16,7 @@ def target(emotion):
         url = 'http://www.imdb.com/search/title?genres=family&amp;title_type=feature&amp;sort=moviemeter, asc'
     elif emotion == "fear":
         url = 'http://www.imdb.com/search/title?genres=sport&amp;title_type=feature&amp;sort=moviemeter, asc'
-     elif emotion == "anticipation" or "enjoyment":
+    elif emotion == "anticipation" or "enjoyment":
         url = 'http://www.imdb.com/search/title?genres=thriller&amp;title_type=feature&amp;sort=moviemeter, asc'
     elif emotion == "surprise":
         url = 'http://www.imdb.com/search/title?genres=film_noir&amp;title_type=feature&amp;sort=moviemeter, asc'
@@ -33,7 +33,7 @@ def analyse():
     print("Top",n," Recommended Movies : ")
     series = target(sent)
     count=0
-    print_function(series)
+    #print_function(series)
     for i in series :
         movie = str(i).split('>')
         if(len(movie) == 3):
