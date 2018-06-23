@@ -5,22 +5,22 @@ import re as regex
 import requests as HTTP
 import math 
 def target(emotion):
-    urlhere = ""
-    if emotion == "sad":
-        urlhere = 'http://www.imdb.com/search/title?genres=drama&amp;title_type=feature&amp;sort=moviemeter, asc'
-    elif emotion == "disgust":
-        urlhere = 'http://www.imdb.com/search/title?genres=musical&amp;title_type=feature&amp;sort=moviemeter, asc'
-    elif emotion == "anger":
-        urlhere = 'http://www.imdb.com/search/title?genres=family&amp;title_type=feature&amp;sort=moviemeter, asc'
-    elif emotion == "anticipation" or "enjoyment":
-        urlhere = 'http://www.imdb.com/search/title?genres=thriller&amp;title_type=feature&amp;sort=moviemeter, asc'
-    elif emotion == "fear":
-        urlhere = 'http://www.imdb.com/search/title?genres=sport&amp;title_type=feature&amp;sort=moviemeter, asc'
+    url = ""
+    if emotion == "disgust":
+        url = 'http://www.imdb.com/search/title?genres=musical&amp;title_type=feature&amp;sort=moviemeter, asc'
+    elif emotion == "sad":
+        url = 'http://www.imdb.com/search/title?genres=drama&amp;title_type=feature&amp;sort=moviemeter, asc'
     elif emotion == "trust":
-        urlhere = 'http://www.imdb.com/search/title?genres=western&amp;title_type=feature&amp;sort=moviemeter, asc'
+        url = 'http://www.imdb.com/search/title?genres=western&amp;title_type=feature&amp;sort=moviemeter, asc'
+    elif emotion == "anger":
+        url = 'http://www.imdb.com/search/title?genres=family&amp;title_type=feature&amp;sort=moviemeter, asc'
+    elif emotion == "fear":
+        url = 'http://www.imdb.com/search/title?genres=sport&amp;title_type=feature&amp;sort=moviemeter, asc'
+     elif emotion == "anticipation" or "enjoyment":
+        url = 'http://www.imdb.com/search/title?genres=thriller&amp;title_type=feature&amp;sort=moviemeter, asc'
     elif emotion == "surprise":
-        urlhere = 'http://www.imdb.com/search/title?genres=film_noir&amp;title_type=feature&amp;sort=moviemeter, asc'
-    response = HTTP.get(urlhere)
+        url = 'http://www.imdb.com/search/title?genres=film_noir&amp;title_type=feature&amp;sort=moviemeter, asc'
+    response = HTTP.get(url)
     data = response.text
     field = SOUP(data, "lxml")
     #REGEX EXTRACTION OF TITLES
