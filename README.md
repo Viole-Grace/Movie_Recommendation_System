@@ -18,3 +18,4 @@ A Python-based Program that recommends movies based on Emotion
 
 # Scraping:
 - IMDb does not have an API , so data accumulation is performed by using scraping a particular URL of the encountering emotion.
+- Based on the emotion entered, top 'n' movies for that emotion are displayed, where 'n' is entered by the user.
