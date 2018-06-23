@@ -19,3 +19,11 @@ A Python-based Program that recommends movies based on Emotion
 # Scraping:
 - IMDb does not have an API , so data accumulation is performed by using scraping a particular URL of the encountering emotion.
 - Based on the emotion entered, top 'n' movies for that emotion are displayed, where 'n' is entered by the user.
+
+# Files:
+- sentiment.py : actual program to scrape / get the movie recommendation
+- feels.py : a module in the package 'feeling', which takes in an emotion from sentiment, classifies it into one of 8 predefined emotions and returns said emotion category back to sentiment.py
+
+# Text files:
+- Each of the 8 emotions have a file with sample data inside them.
+- Sample Data for each file consists of words which lean towards / convey the particular emotion
