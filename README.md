@@ -6,6 +6,7 @@ A Python-based Program that recommends movies based on Emotion
 
 # Recommendation:
 - Based on the emotion entered, each emotion has been quantified as follows:
+- Emotion || Recommended Genre
 
 - Sad – Drama
 - Disgust – Musical
