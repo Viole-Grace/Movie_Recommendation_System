@@ -2,7 +2,7 @@
 A Python-based Program that recommends movies based on Emotion
 
 # Basics Used:
-- Data Mining ( Scraping )
+- Web Scraping
 
 # Recommendation:
 - Based on the emotion entered, each emotion has been quantified as follows:
